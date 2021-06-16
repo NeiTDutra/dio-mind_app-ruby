@@ -4,4 +4,5 @@
 
 *"MindApp - Desenvolvendo uma Cloud Tags com Ruby"*
 
-Projeto bifurcado de []()
+Projeto bifurcado de [brunoao86 /
+mind-app](https://github.com/brunoao86/mind-app)
