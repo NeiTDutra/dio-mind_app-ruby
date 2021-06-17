@@ -12,22 +12,18 @@
 
 ActiveRecord::Schema.define(version: 2020_11_28_172338) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "citext"
-  enable_extension "plpgsql"
-
   create_table "contents", force: :cascade do |t|
     t.string "title", null: false
     t.text "description", null: false
-    t.bigint "user_id", null: false
+    t.integer "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_contents_on_user_id"
   end
 
   create_table "tag_contents", force: :cascade do |t|
-    t.bigint "tag_id", null: false
-    t.bigint "content_id", null: false
+    t.integer "tag_id", null: false
+    t.integer "content_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["content_id"], name: "index_tag_contents_on_content_id"
@@ -35,8 +31,8 @@ ActiveRecord::Schema.define(version: 2020_11_28_172338) do
   end
 
   create_table "tags", force: :cascade do |t|
-    t.citext "name", null: false
-    t.bigint "user_id", null: false
+    t.string "name", null: false
+    t.integer "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["name", "user_id"], name: "index_tags_on_name_and_user_id", unique: true
