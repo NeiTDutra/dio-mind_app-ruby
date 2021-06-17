@@ -14,3 +14,7 @@ Mais informações sobre o projeto original estão [neste link](https://github.c
 ## Modificações
 
 As modificações do projeto original estão descritas [aqui](https://github.com/NeiTDutra/dio-mind_app-ruby/blob/master/CHANGES.md)
+
+### Ruby com sqlite3
+
+Documentação [neste link](https://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/SQLite3Adapter.html#method-i-supports_insert_on_conflict-3F)
