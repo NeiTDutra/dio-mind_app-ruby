@@ -52,3 +52,31 @@ end
 - Run " rails db:migrate "
 
 - Done!!!
+
+## Display user email
+
+Show the user's email on the page after logging in and while logged in
+
+This is simple:
+
+- in the application.html.erb file add a tag: <"p">User: <%= current_user.email %><"/p"> in the condition "<% if user_signed_in? %>"
+
+```ruby
+...
+<div class="container">
+      <% if user_signed_in? %>
+        <p>User: <%= current_user.email %></p>
+        <%= link_to 'Home', home_path %>
+        <%= link_to 'Contents', contents_path %>
+        <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+      <% end %>
+
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+
+      <%= yield %>
+    </div>
+...
+```
+
+- Done!!!

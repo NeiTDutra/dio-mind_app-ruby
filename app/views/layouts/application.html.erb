@@ -12,6 +12,7 @@
   <body>
     <div class="container">
       <% if user_signed_in? %>
+        <p>User: <%= current_user.email %></p>
         <%= link_to 'Home', home_path %>
         <%= link_to 'Contents', contents_path %>
         <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
