@@ -7,6 +7,8 @@
 Projeto bifurcado de [brunoao86 /
 mind-app](https://github.com/brunoao86/mind-app)
 
+Implantado no [Heroku](https://dio-cloud-tags-ruby.herokuapp.com/)
+
 ## Informações
 
 Mais informações sobre o projeto original estão [neste link](https://github.com/NeiTDutra/dio-mind_app-ruby/blob/master/HELPER.md)
