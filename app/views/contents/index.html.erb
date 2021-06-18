@@ -13,15 +13,19 @@
   </div>
 <% end %>
 
-<BR>
-<BR>
+<br>
+<br>
 
 <% @contents.each do |content| %>
-  <%= link_to 'Show', content_path(content) %>
-  <%= link_to 'Edit', edit_content_path(content) %>
+  <p>
+  <%= link_to 'Show', content_path(content) %> |
+  <%= link_to 'Edit', edit_content_path(content) %> |
   <%= link_to 'Destroy', content_path(content), method: :delete, data: { confirm: 'Are you sure?' }  %>
+  </p>
   <strong>Title</strong>: <%= content.title %>
+  <br>
   <strong>Description</strong>: <%= content.description %>
+  <br>
   <strong>Tags</strong>: <%= content.tags.pluck(:name).join(', ') %>
-  <BR>
+  <hr>
 <% end %>

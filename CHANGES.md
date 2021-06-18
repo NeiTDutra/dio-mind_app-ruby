@@ -80,3 +80,13 @@ This is simple:
 ```
 
 - Done!!!
+
+## Layout changes
+
+Some improvements in component presentation using Bootstrap 
+
+- Element centering
+
+- Background on body
+
+- Content separation
